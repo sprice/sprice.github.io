@@ -17,31 +17,31 @@ a:hover {
   border-bottom: 1px solid #333;
 }
 
-#header {
+header {
   width: 100%;
   height: 6em;
   padding-bottom: 4em;
 }
 
 
-#header,
+header,
 .site {
   background-color: #fff;
 }
 
-#header .rodman {
+header .rodman {
   position: absolute;
   top: 15px;
   right: 15px;
   border: 0;
 }
 
-#footer {
+footer {
   background-color: #eee;
   min-height: 8em;
 }
 
-#footer p.follow {
+footer p.follow {
   font-size: 1.571em;
   line-height: 1.273em;
   font-weight: 300;
@@ -52,8 +52,8 @@ a:hover {
  * Home
  */
 
-.front #home,
-#footer .follow {
+.front #hello,
+footer .follow {
   padding-left: 3em;
   padding-right: 3em;
 }
@@ -63,12 +63,12 @@ a:hover {
   padding-bottom: 8em;
 }
 
-.front #footer {
+.front footer {
   padding-top: 4em;
 }
 
 .front h1,
-#footer p.follow a {
+footer p.follow a {
   font-family: "Vollkorn", "Hoefler Text", Times, "Times New Roman", serif;
 }
 
