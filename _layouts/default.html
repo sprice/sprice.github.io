@@ -20,8 +20,11 @@
   <link rel="openid2.provider" href="http://www.myopenid.com/server" />
   <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sprice.myopenid.com" />
 </head>
+{% if page.body %}
 <body class="{{ page.body }}">
-
+{% else %}
+<body>
+{% endif %}
   <div id="header">
     <div class="rodman">
       <img src="/images/rodman_m_price.png" alt="Rodman M. Price" title="Rodman M. Price" width="92" height="100" />
