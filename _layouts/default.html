@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset='UTF-8'/> 
+   <meta charset='utf-8'/> 
    <title>{{ page.title }}</title>
    <meta name="author" content="Shawn Price" />
    <meta name="keywords" content="shawn price, sprice, shawnprice, spriceless, langworthy" />
@@ -10,11 +10,15 @@
 
    <!-- Styles -->
    <link rel="stylesheet" href="/css/reset.css" />
-   <link rel="stylesheet" href="/css/screen.css" media="screen, projection" />
-   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Vollkorn" />
+   <link rel="stylesheet" href="/css/layout.css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/style.css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/goudy-fontface.css" />
+   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400' />
 
    <!-- html5shiv -->
-   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+   <!--[if lt IE 9]>
+   <script src="/js/html5shiv.js"></script>
+   <![endif]-->
 
    <!-- OpenID -->
   <link rel="openid.server" href="http://www.myopenid.com/server" />
@@ -23,30 +27,12 @@
   <link rel="openid2.provider" href="http://www.myopenid.com/server" />
   <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=sprice.myopenid.com" />
 </head>
-{% if page.body %}
-<body class="{{ page.body }}">
-{% else %}
 <body>
-{% endif %}
-  <header>
-    <section class="rodman">
-      <img src="/images/rodman_m_price.png" alt="Rodman M. Price" title="Rodman M. Price" width="92" height="100" />
-    </section>
-  </header>
+<div class="top-bar"></div>
 
-  <section class="site">
-
+<div class="container">
 {{ content }}
-
-  </section>
-
-  <footer>
-    <section class="contact">
-      <p class="follow">Follow Shawn on <a href="http://twitter.com/sprice" title="Follow Shawn on twitter">twitter</a>.</p>
-    </section>
-  </footer>
-
-<a href="http://github.com/sprice"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/ce742187c818c67d98af16f96ed21c00160c234a/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+</div>
 
 <script type="text/javascript">
 

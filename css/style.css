@@ -1,0 +1,55 @@
+/**
+ * Common
+ */
+
+html,body {
+  color: #000;
+  background-color: #FAFAF7;
+}
+
+a {
+  font-weight : bold; 
+  text-decoration : none;
+  color: #05b;
+}
+
+a:hover {
+  color: #009EDB;
+}
+
+a:active {
+  color: #000;
+}
+
+header .shawnprice {
+  /*font-family: "Vollkorn", Georgia, "Times New Roman", Times, serif;*/ 
+  font-size: 2em;
+}
+
+header .rodman {
+  border: 0;
+}
+
+.top-bar {
+  background-color: #009EDB;
+}
+
+.posts li {
+  font-family: "SortsMillGoudy", Georgia, "Times New Roman", Times, serif;
+}
+
+/**
+ * Home
+ */
+
+h1,
+footer p.follow a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.143;
+}
+

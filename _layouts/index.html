@@ -1,0 +1,24 @@
+---
+layout: default
+---
+  <header>
+    <section class="rodman">
+      <img src="/images/rodman.png" width="92" height="100" />
+    </section>
+  </header>
+
+  <section class="site">
+
+{{ content }}
+
+  </section>
+  
+  <section class="posts">
+    <ul>
+      {% if site.posts %}
+        {% for post in site.posts %}
+          <li><span>{{ post.date | date_to_string }}</span> &middot; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </section>
