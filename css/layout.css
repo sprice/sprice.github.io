@@ -29,6 +29,14 @@ header .rodman {
   float: right;
 }
 
+/*.hello {
+  text-align: center;
+}*/
+
+.hello .about {
+  text-align: left;
+}
+
 .posts ul {
   text-align: center;
   margin-bottom: 1em;

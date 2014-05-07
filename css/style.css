@@ -8,7 +8,7 @@ html,body {
 }
 
 a {
-  font-weight : bold; 
+  font-weight : normal;
   text-decoration : none;
   color: #05b;
 }
@@ -22,7 +22,6 @@ a:active {
 }
 
 header .shawnprice {
-  /*font-family: "Vollkorn", Georgia, "Times New Roman", Times, serif;*/ 
   font-size: 2em;
 }
 
@@ -34,22 +33,15 @@ header .rodman {
   background-color: #009EDB;
 }
 
-.posts li {
-  font-family: "SortsMillGoudy", Georgia, "Times New Roman", Times, serif;
-}
-
-/**
- * Home
- */
-
 h1,
-footer p.follow a {
-  font-family: Georgia, "Times New Roman", Times, serif;
+.posts li {
+  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, serif;
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2em;
   line-height: 1.143;
+  margin-bottom: .5em;
 }
 
