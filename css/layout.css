@@ -7,7 +7,14 @@ html {
 }
 
 .container {
-  margin: 0 5em;
+  margin: 0 5vw;
+  height: 99.5vh;
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    margin: 0 10vw;
+  }
 }
 
 p {
@@ -19,14 +26,14 @@ header {
   padding-bottom: 1em;
 }
 
-header .shawnprice {
+header .rodman {
   position: absolute;
-  top: 15px;
+  right: 10px;
+  margin-top: 10px;
 }
 
-header .rodman {
-  padding-top: 15px;
-  float: right;
+.site {
+  height: 100%;
 }
 
 /*.hello {
@@ -44,5 +51,6 @@ header .rodman {
 
 .top-bar {
   width: 100%;
-  height: 31px;
+  height: 5px;
+  height: 0.5vh;
 }
