@@ -22,7 +22,7 @@ html,body {
 a {
   position: relative;
   text-decoration: none;
-  font-family: Georgia, Times, "Times New Roman", serif;;
+  font-family: 'Merriweather', Georgia, Times, "Times New Roman", serif;;
   color: $linkColor;
   text-shadow:  1px  0px   0px $bgcolor,
                -1px  0px   0px $bgcolor,
@@ -59,9 +59,8 @@ header .rodman {
   background-color: $underlineColor;
 }
 
-h1,
-.posts li {
-  font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, serif;
+h1 {
+  font-family: 'Merriweather', Georgia, serif;
 }
 
 h1 {
