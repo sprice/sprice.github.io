@@ -3,7 +3,7 @@
 
 $bgcolor: #FAFAF7;
 $underlineColor: #1565C0;
-$underlineHeight: 2px;
+$underlineHeight: 1px;
 $selectionColor: #1E88E5;
 $linkColor: #263238;
 $underlineHeightHover: 3px;
@@ -16,7 +16,8 @@ $headingColor: #0D47A1;
 
 html,body {
   color: #000;
-  background-color: $bgcolor;
+  background-color: #fafafa;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239E9E9E' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 a {
@@ -32,7 +33,7 @@ a {
   background-image: linear-gradient(to bottom, $bgcolor 50%, $underlineColor 50%);
   background-size: 1px $underlineHeight * 2;
   background-repeat: repeat-x;
-  background-position: 0% 93%;
+  background-position: 0% 90%;
   
   .no-cssgradients & {
     text-decoration: underline;
@@ -44,7 +45,7 @@ a {
 a:hover {
   background-size: 1px $underlineHeightHover * 2;
   background-image: linear-gradient(to bottom, $bgcolor 50%, $underlineColor 50%);
-  background-position: 0% 94%;
+  background-position: 0% 90%;
 }
 
 header .shawnprice {
