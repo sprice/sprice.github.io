@@ -10,6 +10,7 @@ $underlineHeightHover: 3px;
 $headingColor: #0D47A1;
 
 
+
 /**
  * Common
  */
@@ -20,40 +21,8 @@ html,body {
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239E9E9E' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-a.fancy {
-  position: relative;
-  text-decoration: none;
-  font-family: 'Merriweather', Georgia, Times, "Times New Roman", serif;;
-  color: $linkColor;
-  text-shadow:  1px  0px   0px $bgcolor,
-               -1px  0px   0px $bgcolor,
-                2px  0px   0px $bgcolor,
-               -2px  0px   0px $bgcolor;
-  
-  background-image: linear-gradient(to bottom, $bgcolor 50%, $underlineColor 50%);
-  background-size: 1px $underlineHeight * 2;
-  background-repeat: repeat-x;
-  background-position: 0% 90%;
-  
-  .no-cssgradients & {
-    text-decoration: underline;
-    color: blue;
-    text-shadow: none;
-  }
-}
-
-a.fancy:hover {
-  background-size: 1px $underlineHeightHover * 2;
-  background-image: linear-gradient(to bottom, $bgcolor 50%, $underlineColor 50%);
-  background-position: 0% 90%;
-}
-
 header .shawnprice {
   font-size: 2em;
-}
-
-header .rodman {
-  border: 0;
 }
 
 .top-bar {
@@ -112,3 +81,29 @@ a:hover {
 .social-icons i {
   margin-right: 20px;
 }
+
+
+.home-link a {
+  text-decoration: none;
+}
+
+/* Contact Form */
+form.fte, form.fte input, form.fte textarea, form.fte select, form.fte .fte-ckrad{font-size:16px;color:#222;font-family:verdana,sans-serif;line-height:1.3em;border-radius:0;outline:none;box-sizing:border-box;-webkit-text-size-adjust:100%;}    
+form.fte{max-width:600px;padding:0;margin:2em auto;}
+form.fte input, form.fte textarea, form.fte select, form.fte .fte-ckrad label{color:#666;background:#fff;border:1px solid #ccc;width:100%;padding:15px 20px;margin:15px 0 30px;transition: all .2s;}
+form.fte input[type="text"], form.fte input[type="submit"], form.fte textarea{-webkit-appearance:none;}
+form.fte input[type="submit"]{background:#444;color:#fff;padding:18px 28px;width:auto;border-radius:100px;cursor:pointer;border:none;margin:0;white-space:normal;}
+form.fte input[type="submit"]:hover{background:#666;}
+form.fte input:focus, form.fte textarea:focus, form.fte select:focus{border-color:#999;}
+form.fte select{-moz-appearance: none; -webkit-appearance: none; background: #fff url("data:image/gif;base64,R0lGODlhCgAFAJEAAGZmZv///////wAAACH5BAEHAAIALAAAAAAKAAUAAAIKhI+CKboNGWxmFgA7") no-repeat right 20px center;padding-right:20px;cursor:pointer;}   
+form.fte input[type="file"] {line-height:1em;font-size:1em;padding:10px;}
+form.fte .fte-ckrad, .g-recaptcha{margin-bottom:30px;}
+form.fte .fte-ckrad label{cursor:pointer;padding:0;margin:15px 0 0 1em;background:none;border:none;display:inline-block;width:auto;position:relative;}
+form.fte .fte-ckrad input{width:auto;margin:.5em 0 .5em .5em;cursor:pointer;display:inline-block;opacity:0;}
+form.fte .fte-ckrad input[type="radio"] + label::before{content:'';display:block;height:1.2em;width:1.2em;border:1px solid #ccc;border-radius:1em;position:absolute;left:-2em;top:0;background:#fff;box-shadow:inset 0px 0px 0px .3em #fff;transition: all .2s;}
+form.fte .fte-ckrad input[type="radio"]:checked + label::before{ background:#666;}
+form.fte .fte-ckrad input[type="checkbox"] + label::before{content:'\2713';display:block;height:1.2em;width:1.2em;border:1px solid #ccc;position:absolute;left:-2em;top:0;background:#fff;color:#fff;text-align:center;transition: all .2s;}
+form.fte .fte-ckrad input[type="checkbox"]:checked + label::before{color:#666;}
+form.fte input[type="file"] {line-height:1em;font-size:1em;padding:0;border:none;cursor: pointer;}
+form.fte .credit{font:10px arial;float:right;color:#999;margin-top:22px;}
+form.fte .credit a{color:#999;}
