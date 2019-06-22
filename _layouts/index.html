@@ -13,13 +13,14 @@ layout: default
 {{ content }}
 
   </section>
-  
+
+  {% if site.posts %}
   <section class="posts">
+    <h3>Posts</h3>
     <ul>
-      {% if site.posts %}
-        {% for post in site.posts %}
-          <li><span>{{ post.date | date_to_string }}</span> &middot; <a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      {% endif %}
+      {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> - <span class="post-date">{{ post.date | date: "%B %-d,  %Y" }}</span></li>
+      {% endfor %}
     </ul>
   </section>
+  {% endif %}

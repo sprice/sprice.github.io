@@ -2,28 +2,11 @@
  * Common
  */
 
-body {
+html, body {
   width: 100%;
   font-size: 18px;
+  line-height: 24px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-@media screen and (min-width: 540px) {
-  body {
-    font-size: 1.75rem;
-  }
-}
-
-@media screen and (min-width: 760px) {
-  body {
-    font-size: 1.75rem;
-  }
-}
-
-@media screen and (min-width: 940px) {
-  body {
-    font-size: 2.375rem;
-  }
 }
 
 .container {
@@ -51,9 +34,12 @@ header {
   height: 125px;
 }
 
-/*.hello {
-  text-align: center;
-}*/
+.hello {
+  max-width: 768px;
+  margin: auto;
+  font-size: 1.7777rem;
+  line-height: 2.6666rem;
+}
 
 .hello .about {
   text-align: left;
@@ -64,8 +50,28 @@ header {
   margin-bottom: 1em;
 }
 
+.posts li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.posts h3 {
+  text-align: center;
+}
+
 .top-bar {
   width: 100%;
   height: 5px;
   height: 0.5vh;
+}
+
+article {
+  max-width: 768px;
+  margin: auto;
+  font-size: 1.3333rem;
+  line-height: 2.1111rem;
+}
+
+article img {
+  width: 100%;
 }

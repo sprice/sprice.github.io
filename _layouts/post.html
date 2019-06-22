@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: page
 ---
-<div id="post">
+<article id="post">
+<h1>{{ page.title }}</h1>
+<span>{{ page.date | date: "%B %-d,  %Y" }}</span>
 {{ content }}
-</div>
+</article>

@@ -1,12 +1,12 @@
 build:
-	jekyll build
+	bundle exec jekyll build
 
 serve:
-	jekyll serve
+	bundle exec jekyll serve
 
-watch:
-	jekyll serve --watch
+drafts:
+	bundle exec jekyll serve --drafts
 
 deploy:
-	jekyll build
+	bundle exec jekyll build
 	s3_website push
