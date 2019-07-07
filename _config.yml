@@ -1,4 +1,4 @@
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:title/
 cdn: http://d2g3c0l1k63iq2.cloudfront.net
 sass:
   style: compressed
