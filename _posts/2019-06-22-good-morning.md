@@ -5,6 +5,7 @@ date: '2019-06-22 06:00:00 -0700'
 categories: [misc]
 tags: [systems]
 description: Goals and systems each have their place. Be mindful of choosing the right tool for the job.
+crosspost_to_medium: true
 ---
 
 Good morning. It's a breath after 5:00am and were it not one of the longest days of the year the amount of light out would be surprising. A Saturday, and I'm up and about by choice.

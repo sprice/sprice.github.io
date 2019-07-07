@@ -75,3 +75,9 @@ article {
 article img {
   width: 100%;
 }
+
+.license {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}

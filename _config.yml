@@ -2,7 +2,15 @@ permalink: /:year/:month/:day/:title/
 cdn: http://d2g3c0l1k63iq2.cloudfront.net
 sass:
   style: compressed
-exclude: [Makefile, README.md, s3_website.yml]
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
+exclude: [Makefile, README.md, s3_website.yml, .env, .env_, Gemfile, Gemfile.lock]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap, jekyll-crosspost-to-medium]
 url: https://shawnprice.com
 description: Shawn Price is a leader and engineering manager who grows efficient and effective software teams.
+timezone: UTC
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: public
+  license: cc-40-by-nc-sa
+  text: '<p><i>Originally published at <a href="{{ url }}">shawnprice.com</a></i></p>'
+  backdate: true
