@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Shawn Price" />
   <meta name="keywords" content="shawn price, sprice, shawnprice" />
-  <meta name="description" content="Shawn Price is a leader and engineering manager who grows efficient and effective teams." />
+  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon' />
 
   <!-- Styles -->
