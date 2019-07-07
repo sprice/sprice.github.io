@@ -5,4 +5,4 @@ sass:
 exclude: [Makefile, README.md, s3_website.yml]
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 url: https://shawnprice.com
-description: Shawn Price is a leader and engineering manager who grows efficient and effective teams.
+description: Shawn Price is a leader and engineering manager who grows efficient and effective software teams.
