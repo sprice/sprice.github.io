@@ -31,9 +31,6 @@ header .shawnprice {
 
 h2.hi {
   font-family: 'Merriweather', Georgia, serif;
-}
-
-h2.hi {
   font-weight: 400;
   font-size: 2em;
   line-height: 1.143;
@@ -42,9 +39,15 @@ h2.hi {
 }
 
 h1.about {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.7777rem;
   line-height: 2.3333rem;
   font-weight: 400;
+}
+
+h1 {
+  font-size: 2.3333rem;
+  font-family: 'Merriweather', Georgia, serif;
 }
 
 .amp {
@@ -92,6 +95,10 @@ a:hover {
 
 .home-link a {
   text-decoration: none;
+}
+
+.sr-only {
+  display: none;
 }
 
 /* Contact Form */

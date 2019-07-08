@@ -3,20 +3,25 @@
 
 <head>
   <meta charset='utf-8' />
-  <title>{{ page.title }}</title>
+  <title>
+    {% if site.title == page.title %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} - {{ site.title }}
+    {% endif %}
+  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Shawn Price" />
-  <meta name="keywords" content="shawn price, sprice, shawnprice" />
-  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+  <meta name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon' />
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ "css/normalize.css" | cdn }}" />
-  <link rel="stylesheet" href="{{ "css/layout.css" | cdn }}" media="screen, projection" />
-  <link rel="stylesheet" href="{{ "css/style.css" | cdn }}" media="screen, projection" />
+  <link rel="stylesheet" href="{{ "css/layout.css" | cdn }}" media="screen" />
+  <link rel="stylesheet" href="{{ "css/style.css" | cdn }}" media="screen" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather%7COpen+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,14 +31,15 @@
     {{ content }}
 
     <p class="social-icons">
-        <a href="https://twitter.com/sprice"><i class="fa fa-twitter" aria-label="Twitter"></i></a>
-        <a href="https://ca.linkedin.com/in/shawnprice"><i class="fa fa-linkedin" aria-label="LinkedIn"></i></a>
-        <a href="https://github.com/sprice"><i class="fa fa-github" aria-label="GitHub"></i></a>
-        <a href="tel:+18552774296"><i class="fa fa-phone" aria-label="Phone"></i></a>
+        <a href="https://twitter.com/sprice" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
+        <a href="https://ca.linkedin.com/in/shawnprice" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>
+        <a href="https://github.com/sprice" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true" title="GitHub"></i><span class="sr-only">GitHub</span></a>
+        <a href="tel:+18552774296" aria-label="Phone"><i class="fa fa-phone" aria-hidden="true" title="Phone"></i><span class="sr-only">Phone</span></a>
+        <a href="https://shawnprice.com/feed.xml" aria-label="Atom Feed"><i class="fa fa-rss" aria-hidden="true" title="Atom Feed"></i><span class="sr-only">Atom Feed</span></a>
     </p>
   </div>
 
-  <script type="text/javascript">
+  <script>
 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-12752188-1']);
@@ -46,7 +52,7 @@
     })();
 
   </script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </body>
 
 </html>

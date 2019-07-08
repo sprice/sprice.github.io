@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Good Morning"
+title:  Good Morning
 date: '2019-06-22 06:00:00 -0700'
 categories: [misc]
 tags: [systems]
