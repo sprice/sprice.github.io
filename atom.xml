@@ -5,7 +5,7 @@ title : Atom Feed
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-<link rel="hub" href="https://pubsubhubbub.appspot.com" />
+<link rel="hub" href="https://shawnprice.superfeedr.com" />
 
   <title type="text" xml:lang="en">{{ site.name }}</title>
     <link type="application/atom+xml" href="{{ site.url }}/atom.xml" rel="self"/>
