@@ -16,5 +16,5 @@ jekyll-crosspost_to_medium:
   cache: .jekyll-crosspost_to_medium
   status: public
   license: cc-40-by-nc-sa
-  text: '<p><i>Originally published at <a href="{{ url }}">shawnprice.com</a></i></p>'
+  text: '<p><i>Originally published at <a href="{{ url }}?utm_source=Medium&amp;utm_medium=referral">shawnprice.com</a></i></p>'
   backdate: true
