@@ -1,0 +1,27 @@
+{
+  "name": "shawnprice.com",
+  "version": "1.0.0",
+  "description": "shawnprice.com",
+  "scripts": {
+    "scss": "node-sass -o css/ scss/style.scss",
+    "concat:css": "concat -o dist/styles.css css/*",
+    "postcss": "postcss --no-map --use cssnano --output dist/styles.min.css dist/styles.css",
+    "build:css": "npm run scss && npm run concat:css && npm run postcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sprice/sprice.github.io.git"
+  },
+  "author": "Shawn Price",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sprice/sprice.github.io/issues"
+  },
+  "homepage": "https://github.com/sprice/sprice.github.io#readme",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.3"
+  }
+}

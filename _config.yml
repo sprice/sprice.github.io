@@ -4,7 +4,7 @@ permalink: /:year/:month/:day/:title/
 cdn: http://d2g3c0l1k63iq2.cloudfront.net
 sass:
   style: compressed
-exclude: [Makefile, README.md, s3_website.yml, .env, .env_, Gemfile, Gemfile.lock]
+exclude: [Makefile, README.md, s3_website.yml, .env, .env_, Gemfile, Gemfile.lock, node_modules, package.json, package-lock.json]
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap, jekyll-crosspost-to-medium]
 url: https://shawnprice.com
 description: Shawn Price is a leader and engineering manager who supports the learning and growth of software teams.

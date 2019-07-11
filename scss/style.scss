@@ -1,0 +1,114 @@
+$bgcolor: #FAFAF7;
+$underlineColor: #1565C0;
+$underlineHeight: 1px;
+$selectionColor: #1E88E5;
+$linkColor: #263238;
+$underlineHeightHover: 3px;
+$headingColor: #0D47A1;
+
+/**
+ * Common SCSS
+ */
+
+html,body {
+  color: #000;
+  background-color: #fafafa;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239E9E9E' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+header .shawnprice {
+  font-size: 2em;
+}
+
+.top-bar {
+  background-color: $underlineColor;
+}
+
+h2.hi {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1.143;
+  margin-bottom: .5em;
+  color: $headingColor;
+}
+
+h1.about {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.7777rem;
+  line-height: 2.3333rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.3333rem;
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+.amp {
+  font-size: 1.1em;
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+}
+
+.number {
+  font-size: 0.9em;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+a, a:visited {
+  color: $linkColor;
+}
+
+a:hover {
+  color: $headingColor;
+}
+
+.social-icons {
+  font-size: 1.5555rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin-right: 20px;
+}
+
+.social-icons a:last-of-type {
+  margin-right: 0;
+}
+
+
+.home-link a {
+  text-decoration: none;
+}
+
+.sr-only {
+  display: none;
+}
+
+/* Contact Form */
+form.fte, form.fte input, form.fte textarea, form.fte select, form.fte .fte-ckrad{font-size:16px;color:#222;font-family:verdana,sans-serif;line-height:1.3em;border-radius:0;outline:none;box-sizing:border-box;-webkit-text-size-adjust:100%;}    
+form.fte{max-width:600px;padding:0;margin:2em auto;}
+form.fte input, form.fte textarea, form.fte select, form.fte .fte-ckrad label{color:#666;background:#fff;border:1px solid #ccc;width:100%;padding:15px 20px;margin:15px 0 30px;transition: all .2s;}
+form.fte input[type="text"], form.fte input[type="submit"], form.fte textarea{-webkit-appearance:none;}
+form.fte input[type="submit"]{background:#444;color:#fff;padding:18px 28px;width:auto;border-radius:100px;cursor:pointer;border:none;margin:0;white-space:normal;}
+form.fte input[type="submit"]:hover{background:#666;}
+form.fte input:focus, form.fte textarea:focus, form.fte select:focus{border-color:#999;}
+form.fte select{-moz-appearance: none; -webkit-appearance: none; background: #fff url("data:image/gif;base64,R0lGODlhCgAFAJEAAGZmZv///////wAAACH5BAEHAAIALAAAAAAKAAUAAAIKhI+CKboNGWxmFgA7") no-repeat right 20px center;padding-right:20px;cursor:pointer;}   
+form.fte input[type="file"] {line-height:1em;font-size:1em;padding:10px;}
+form.fte .fte-ckrad, .g-recaptcha{margin-bottom:30px;}
+form.fte .fte-ckrad label{cursor:pointer;padding:0;margin:15px 0 0 1em;background:none;border:none;display:inline-block;width:auto;position:relative;}
+form.fte .fte-ckrad input{width:auto;margin:.5em 0 .5em .5em;cursor:pointer;display:inline-block;opacity:0;}
+form.fte .fte-ckrad input[type="radio"] + label::before{content:'';display:block;height:1.2em;width:1.2em;border:1px solid #ccc;border-radius:1em;position:absolute;left:-2em;top:0;background:#fff;box-shadow:inset 0px 0px 0px .3em #fff;transition: all .2s;}
+form.fte .fte-ckrad input[type="radio"]:checked + label::before{ background:#666;}
+form.fte .fte-ckrad input[type="checkbox"] + label::before{content:'\2713';display:block;height:1.2em;width:1.2em;border:1px solid #ccc;position:absolute;left:-2em;top:0;background:#fff;color:#fff;text-align:center;transition: all .2s;}
+form.fte .fte-ckrad input[type="checkbox"]:checked + label::before{color:#666;}
+form.fte input[type="file"] {line-height:1em;font-size:1em;padding:0;border:none;cursor: pointer;}
+form.fte .credit{font:10px arial;float:right;color:#999;margin-top:22px;}
+form.fte .credit a{color:#999;}
