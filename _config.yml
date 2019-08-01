@@ -13,9 +13,12 @@ plugins: [
 ]
 url: https://shawnprice.com
 description: Shawn Price is a leader and engineering manager who supports the learning and growth of software teams.
-timezone: UTC
+timezone: America/Vancouver
 title: Shawn Price
 name: Shawn Price
+markdown: kramdown
+kramdown:
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
 jekyll-crosspost_to_medium:
   enabled: true
   cache: .jekyll-crosspost_to_medium

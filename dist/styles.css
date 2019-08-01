@@ -411,6 +411,7 @@ html, body {
   font-size: 18px;
   line-height: 24px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -481,8 +482,8 @@ header {
 article {
   max-width: 768px;
   margin: auto;
-  font-size: 1.3333rem;
-  line-height: 2.1111rem;
+  font-size: 1.1666rem;
+  line-height: 1.8333rem;
 }
 
 #post blockquote {
