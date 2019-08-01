@@ -4,7 +4,7 @@ permalink: /:year/:month/:day/:title/
 cdn: http://d2g3c0l1k63iq2.cloudfront.net
 sass:
   style: compressed
-exclude: [Makefile, README.md, s3_website.yml, .env, .env_, Gemfile, Gemfile.lock, node_modules, package.json, package-lock.json]
+exclude: [Makefile, README.md, s3_website.yml, .env, .env_, Gemfile, Gemfile.lock, node_modules, package.json, package-lock.json, ga-lambda.py]
 plugins: [
   jekyll-crosspost-to-medium,
   jekyll-paginate,
@@ -21,5 +21,5 @@ jekyll-crosspost_to_medium:
   cache: .jekyll-crosspost_to_medium
   status: draft
   license: cc-40-by-nc-sa
-  text: '<p><i>Originally published at <a href="{{ url }}?utm_source=Medium&amp;utm_medium=referral">shawnprice.com</a></i></p>'
+  text: '<p><i>Originally published at <a href="{{ url }}?utm_source=medium.com&amp;utm_medium=referral">shawnprice.com</a></i></p>'
   backdate: true

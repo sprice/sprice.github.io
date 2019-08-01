@@ -485,6 +485,10 @@ article {
   line-height: 2.1111rem;
 }
 
+#post blockquote {
+  font-style: italic;
+}
+
 article img {
   width: 100%;
 }
@@ -493,6 +497,12 @@ article img {
   width: 100%;
   margin: auto;
   text-align: center;
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.7777rem;
+  margin-top: 0;
 }
 @font-face {
   font-family: 'Merriweather';
