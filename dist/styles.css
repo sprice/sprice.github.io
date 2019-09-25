@@ -416,7 +416,6 @@ html, body {
 
 .container {
   margin: 0 auto;
-  height: 99.5vh;
   max-width: 1200px;
   padding: 0 20px;
 }
@@ -462,6 +461,7 @@ header {
 .posts ul {
   text-align: center;
   margin-bottom: 1em;
+  padding: 0;
 }
 
 .posts li {
@@ -471,12 +471,6 @@ header {
 
 .posts h3 {
   text-align: center;
-}
-
-.top-bar {
-  width: 100%;
-  height: 5px;
-  height: 0.5vh;
 }
 
 article {
@@ -504,6 +498,16 @@ article img {
   text-align: center;
   font-size: 0.7777rem;
   margin-top: 0;
+}
+
+.profile-photo img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: rgb(244,143,177);
+  background: linear-gradient(0deg, rgba(244,143,177,1) 20%, rgba(206,147,216,1) 80%);
 }
 @font-face {
   font-family: 'Merriweather';
@@ -560,9 +564,6 @@ article img {
  */
 header .shawnprice {
   font-size: 2em; }
-
-.top-bar {
-  background-color: #1565C0; }
 
 h2.hi {
   font-family: 'Merriweather', Georgia, serif;
