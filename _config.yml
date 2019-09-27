@@ -19,6 +19,9 @@ exclude: [
   loggly-lambda.py,
   S3ToLoggly.js
 ]
+include: [
+  _redirects
+]
 plugins: [
   jekyll-crosspost-to-medium,
   jekyll-paginate,
