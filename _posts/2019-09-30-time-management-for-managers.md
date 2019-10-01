@@ -28,22 +28,22 @@ Many managers still spend some of their time in making mode. An engineering mana
 
 Makers plan breaks from their day-to-day work by the blocks of time in their calendar. At the beginning of a workday, any time not scheduled for a maker is time to be in a flow state.
 
-It’s easy for new managers to use a similar practice. Even with a greater number of scheduled events, there will often be large blocks of open time. When planning their week, it's intuitive to expect to get work done in the gaps of the calendar. The first thing a manager needs to learn about calendar management is that any open time is a target. Unscheduled and impromptu meetings will begin piling up before they know it.
+It’s easy for new managers to use a similar practice. Even with a greater number of scheduled events, there will often be large blocks of open time. When planning their week, it’s intuitive to expect to get work done in the gaps of the calendar. The first thing a manager needs to learn about calendar management is that any open time is a target. Unscheduled and impromptu meetings will begin piling up before they know it.
 
 At the beginning of a managers week, it’s easy to say “I have fifteen hours or making I need to do this week. I can see the gaps when I’ll get it done. No problem.” But Friday afternoon comes and they realize they only got seven solid hours of making work done. They look back at their calendar and see a few of those gaps filled in with meetings. There are other gaps, but the manager remembers they were never used for making. Something else came up that demanded attention.
 
-A solution is to schedule in all the making time. It's strange for makers turned managers to create a calendar event for “Work on the API”. But without planning your meeting and work time, you won’t get your work done.
+A solution is to schedule in all the making time. It’s strange for makers turned managers to create a calendar event for “Work on the API”. But without planning your meeting and work time, you won’t get your work done.
 
 
 ![Manager's calendar with focus time](/images/managers-calendar-2.jpg)
 
 
-Depending on your company culture, some managers may need to take this one step further. If you find your calendar is not respected by others, there's another tool available. The "Out of office" event.
+Depending on your company culture, some managers may need to take this one step further. If you find your calendar is not respected by others, there’s another tool available. The “Out of office” event.
 
-I remember the first time I started scheduling "Out of office" events for in-office work. Frustrated that I wasn't getting the work done that both my team and I expected I do, I needed another solution. Each week I would start by having a calendar with a mix of scheduled meeting time and making time. But as the week wore on, my scheduled making time would become double booked with meetings.
+I remember the first time I started scheduling “Out of office” events for in-office work. Frustrated that I wasn’t getting the work done that both my team and I expected I do, I needed another solution. Each week I would start by having a calendar with a mix of scheduled meeting time and making time. But as the week wore on, my scheduled making time would become double booked with meetings.
 
-The solution I found was booking my making time as an "Out of office" event. Now when someone tried to double book me, they couldn't.
- 
-Note that in Google Calendar, you cannot book repeating "Out of office" events. The habit I created was to create my "Out of office" events first thing in the morning on the first day of the week.
+The solution I found was booking my making time as an “Out of office” event. Now when someone tried to double book me, they couldn’t.
 
-A manager is always too busy, but it's important to keep your calendar under some level of control. If you know of any useful calendar hacks, please [let me know](/contact).
+Note that in Google Calendar, you cannot book repeating “Out of office” events. The habit I created was to create my “Out of office” events first thing in the morning on the first day of the week.
+
+A manager is always too busy, but it’s important to keep your calendar under some level of control. If you know of any useful calendar hacks, please [let me know](/contact).
