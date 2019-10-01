@@ -4,8 +4,11 @@ title:  "Time Management For Managers"
 date: '2019-09-30 21:00:00 -0700'
 tags: ['management']
 description: Take control of your calendar. Take control of your time.
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
+
+![Black and gold roman numeral analog clock](/images/clock.jpg)
+<p class="caption">Photo by Fabrizio Verrecchia on Unsplash</p>
 
 To be productive, makers such as software engineers need to spend much of their workday in a state of [flow](https://en.wikipedia.org/wiki/Flow_(psychology)). It is expensive to get both into and out of flow so the more blocks of uninterrupted time the better. Many managers spend much of their day in meetings, yet still have work that benefits from flow. This post provides calendar management tips for managers who want to get their work done.
 
