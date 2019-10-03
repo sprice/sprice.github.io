@@ -23,5 +23,9 @@
     "cssnano": "^4.1.10",
     "node-sass": "^4.12.0",
     "postcss-cli": "^6.1.3"
+  },
+  "dependencies": {
+    "cookie": "^0.4.0",
+    "universal-analytics": "^0.4.20"
   }
 }

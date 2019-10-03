@@ -4,3 +4,6 @@ _drafts/
 Gemfile.lock
 s3_website.yml
 node_modules
+
+# Local Netlify folder
+.netlify

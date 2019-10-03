@@ -33,5 +33,6 @@ const uuidCookie = getCookie('uuid')
 
 if (!uuidCookie) {
   const uuid = uuidv4()
-  setCookie('uuid', uuid, 730)
+  const twoYears = 730
+  setCookie('uuid', uuid, twoYears)
 }

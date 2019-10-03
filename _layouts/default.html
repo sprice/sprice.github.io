@@ -36,6 +36,9 @@
     </p>
   </div>
   <script src="/js/scripts.js"></script>
+  {% if jekyll.environment == "production" %}
+    <script src="/.netlify/functions/analytics" async></script>
+  {% endif %}
 </body>
 
 </html>
