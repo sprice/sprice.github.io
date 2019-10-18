@@ -9,6 +9,8 @@ exports.handler = function(event, context, callback) {
 
   let baseDomain = process.env.BASE_DOMAIN
 
+  console.log('cookie', event.headers.cookie)
+
   const cookies = cookie.parse(event.headers.cookie)
   const uuid = cookies.uuid
   var visitor = ua(process.env.GOOGLE_ANALYTICS_ID, uuid)
