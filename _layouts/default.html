@@ -35,9 +35,9 @@
         <a href="{{ site.url }}/atom.xml" aria-label="Atom Feed"><i class="fa fa-rss" aria-hidden="true" title="Atom Feed"></i><span class="sr-only">Atom Feed</span></a>
     </p>
   </div>
-  <script src="/js/scripts.js"></script>
+  <script src="/js/scripts.js" async></script>
   {% if jekyll.environment == "production" %}
-    <script src="/.netlify/functions/analytics" async></script>
+    <script src="/.netlify/functions/analytics" defer></script>
   {% endif %}
 </body>
 
