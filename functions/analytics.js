@@ -21,11 +21,8 @@ exports.handler = function(event, context, callback) {
     return callback(null, returnBody)
   }
 
-  log('here is the cookie', event.headers.cookie)
-  log('typeof cookie', typeof event.headers.cookie)
-
   if (typeof event.headers.cookie != "string") {
-    log('Exiting: cookies are not a string')
+    log('Exiting: cookies are not a string', event.headers.cookie)
     return callback(null, returnBody)
   }
 
@@ -33,6 +30,7 @@ exports.handler = function(event, context, callback) {
   const uuid = cookies.uuid
 
   if (!uuid) {
+    log('Exiting: no uuid on cookies', cookies)
     return callback(null, returnBody)
   }
 
