@@ -36,3 +36,5 @@ if (!uuidCookie) {
   const twoYears = 730
   setCookie('uuid', uuid, twoYears)
 }
+
+fetch('/.netlify/functions/analytics')
