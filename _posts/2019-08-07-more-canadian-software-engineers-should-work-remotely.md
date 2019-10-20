@@ -5,9 +5,10 @@ date: '2019-08-07 12:50:00 -0400'
 tags: ['remote work', 'distributed teams', 'money', 'canada', 'software engineering']
 description: The benefits of distributed work and the US Dollar are too good to pass up.
 crosspost_to_medium: true
-hero_image: /images/person-sunrise.jpg
+hero_image_url: /images/person-sunrise.jpg
+hero_image_alt: Person standing on hill during sunrise
 ---
-![Person standing on hill during sunrise]({{ page.hero_image }})
+![{{ page.hero_image_alt}}]({{ page.hero_image_url }})
 <p class="caption">Photo by Pablo Heimplatz on Unsplash</p>
 
 Knowledge work is changing. There are a growing number of companies creating remote teams. Many companies are completely distributed. These changes are creating leverage for software engineers living in markets outside the US to raise their salaries. For those who haven't worked remote it can be an adjustment. But there's an incredible payoff.
