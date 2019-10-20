@@ -12,13 +12,24 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Shawn Price" />
-  <meta name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  {% if page.hero_image %}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@sprice" />
+  <meta name="twitter:creator" content="@sprice" />
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:image" content="{{ page.hero_image | prepend: site.url }}" />
+  {% else %}
+  <meta property="fuck">
+  {% endif %}
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/atom.xml" />
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
   <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon' />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="{{ "dist/styles.min.css" | cdn }}" media="screen" />
+  <link rel="stylesheet" href="/dist/styles.min.css" />
 </head>
 
 <body>

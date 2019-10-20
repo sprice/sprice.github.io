@@ -1,5 +1,9 @@
+title: Shawn Price
+description: Shawn Price is a leader and engineering manager who supports the learning and growth of software teams.
+url: <%= ENV['BASE_URL'] %>
 author:
   name: Shawn Price
+name: Shawn Price
 permalink: /:title/
 sass:
   style: compressed
@@ -28,11 +32,7 @@ plugins: [
   jekyll-seo-tag,
   jekyll-sitemap
 ]
-url: https://shawnprice.com
-description: Shawn Price is a leader and engineering manager who supports the learning and growth of software teams.
 timezone: America/Vancouver
-title: Shawn Price
-name: Shawn Price
 markdown: kramdown
 kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo

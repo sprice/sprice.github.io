@@ -3,7 +3,7 @@ const ua = require('universal-analytics')
 
 const now = new Date().toISOString()
 const returnBody = { statusCode: 200, body: "" }
-const baseDomain = process.env.BASE_DOMAIN
+const baseDomain = process.env.BASE_URL
 
 const log = (msg, value) => {
   console.log(`${now}: ${msg} :: ${value}`)
