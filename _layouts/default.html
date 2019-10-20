@@ -17,10 +17,8 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@sprice" />
   <meta name="twitter:creator" content="@sprice" />
-  <meta property="twitter:url" content="{{ page.url | prepend: site.url }}" />
-  <meta property="twitter:title" content="{{ page.title }}" />
   <meta property="twitter:description" content="{{ page.description }}" />
-  <meta property="twitter:image" content="{{ page.hero_image_url | prepend: site.url }}" />
+  <meta property="twitter:image" content="{{ page.hero_image_small_url | prepend: site.url }}" />
   <meta property="twitter:image:alt" content="{{ page.hero_image_alt }}" />
   {% else %}
   <meta property="fuck">

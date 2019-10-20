@@ -6,6 +6,7 @@ tags: ['remote work', 'distributed teams', 'money', 'canada', 'software engineer
 description: The benefits of distributed work and the US Dollar are too good to pass up.
 crosspost_to_medium: true
 hero_image_url: /images/person-sunrise.jpg
+hero_image_small_url: /images/person-sunrise.small.jpg
 hero_image_alt: Person standing on hill during sunrise
 ---
 ![{{ page.hero_image_alt}}]({{ page.hero_image_url }})
