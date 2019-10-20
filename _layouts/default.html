@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" {% if page.layout == "post" %}itemscope itemtype="http://schema.org/Article"{% endif %}>
 
 <head>
   <meta charset='utf-8' />
@@ -10,20 +10,39 @@
       {{ page.title }} - {{ site.title }}
     {% endif %}
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Shawn Price" />
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  {% if page.hero_image_url %}
+  {% if page.layout == "post" %}
+
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@sprice" />
   <meta name="twitter:creator" content="@sprice" />
   <meta name="twitter:title" content="{{ page.title }}" />
   <meta property="twitter:description" content="{{ page.description }}" />
+  {% if page.hero_image_small_url %}
   <meta property="twitter:image" content="{{ page.hero_image_small_url | prepend: site.url }}" />
+  {% endif %}
+  {% if page.hero_image_alt %}
   <meta property="twitter:image:alt" content="{{ page.hero_image_alt }}" />
   {% endif %}
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+  <meta property="og:description" content="{{ page.description}} " />
+  {% if page.hero_image_small_url %}
+  <meta property="og:image" content="{{ page.hero_image_small_url | prepend: site.url }}" />
+  {% endif %}
+  <meta property="og:type" content="article" />
+
+  <meta itemprop="name" content="{{ page.title }}" />
+  <meta itemprop="description" content="{{ page.description }}" />
+  {% if page.hero_image_small_url %}
+  <meta itemprop="image" content="{{ page.hero_image_small_url | prepend: site.url }}" />
+  {% endif %}
+
+  {% endif %}
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/atom.xml" />
-  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}" />
   <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon' />
 
   <!-- Styles -->
