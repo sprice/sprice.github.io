@@ -31,6 +31,8 @@
   <meta property="og:description" content="{{ page.description}} " />
   {% if page.hero_image_small_url %}
   <meta property="og:image" content="{{ page.hero_image_small_url | prepend: site.url }}" />
+  <meta property="og:image:width" content="{{ page.hero_image_small_width }}" />
+  <meta property="og:image:height" content="{{ page.hero_image_small_height }}" />
   {% endif %}
   <meta property="og:type" content="article" />
 

@@ -7,6 +7,8 @@ description: Take control of your calendar. Take control of your time.
 crosspost_to_medium: true
 hero_image_url: /images/clock.jpg
 hero_image_small_url: /images/clock.small.jpg
+hero_image_small_width: 662
+hero_image_small_height: 440
 hero_image_alt: Black and gold roman numeral analog clock
 ---
 

@@ -7,6 +7,8 @@ description: The benefits of distributed work and the US Dollar are too good to 
 crosspost_to_medium: true
 hero_image_url: /images/person-sunrise.jpg
 hero_image_small_url: /images/person-sunrise.small.jpg
+hero_image_small_width: 660
+hero_image_small_height: 440
 hero_image_alt: Person standing on hill during sunrise
 ---
 ![{{ page.hero_image_alt}}]({{ page.hero_image_url }})
