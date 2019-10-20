@@ -43,6 +43,8 @@
   <meta itemprop="description" content="{{ page.description }}" />
   <meta itemprop="author" content="{{ site.author.name }}" />
   <meta itemprop="datePublished" content="{{ page.date }}" />
+  <meta itemprop="dateModified" content="{{ page.date }}" />
+  <meta itemprop="mainEntityOfPage" content="{{ page.url | prepend: site.url }}" />
   <meta itemprop="headline" content="{{ page.description }}" />
   <meta itemprop="publisher" content="{{ site.author.name }}" />
   {% if page.hero_image_small_url %}
