@@ -1,6 +1,6 @@
 title: Shawn Price
 description: Shawn Price is a leader and engineering manager who supports the learning and growth of software teams.
-url: <%= ENV['BASE_URL'] %>
+url: https://shawnprice.com
 author:
   name: Shawn Price
 name: Shawn Price
