@@ -2,7 +2,7 @@
 layout: post
 title:  "The Double Opt-In Introduction"
 date: '2019-11-07 14:30:00 -0700'
-tags: [introductions, networks, etiquette, business]
+tags: [networks, etiquette, business]
 description: The double opt-in introduction is the compassionate way to make introductions.
 crosspost_to_medium: true
 hero_image_url: /images/hello.jpg
