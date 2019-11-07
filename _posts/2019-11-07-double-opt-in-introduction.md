@@ -15,7 +15,7 @@ hero_image_alt: Neon hello sign
 ![{{ page.hero_image_alt}}]({{ page.hero_image_url }})
 <p class="caption">Photo by Drew Beamer on Unsplash</p>
 
-As you build your professional network it won’t be uncommon for someone you know to ask you for an introduction. A decade ago, Fred Wilson asked for [the adoption of the double opt-in introduction](https://avc.com/2009/11/the-double-optin-introduction/). Today these are standard as they are compassinate way to connect people. This post describes the emails involved in the introduction dance.
+As you build your professional network it won’t be uncommon for someone you know to ask you for an introduction. A decade ago, Fred Wilson asked for [the adoption of the double opt-in introduction](https://avc.com/2009/11/the-double-optin-introduction/). Today these are standard as they are compassionate way to connect people. This post describes the emails involved in the introduction dance.
 
 Helping others expand their network contributes to compounding the value of your own. But it’s important to act with compassion toward those involved. Your colleague Bob may ask you to introduce you to your friend Alice. You don’t know if Alice has the interest or personal bandwidth to make the connection unless you ask her.
 
@@ -47,7 +47,7 @@ Having received permission, send an email cc’ing both Alice and Bob. I've used
 
 > Hi Alice,
 
-> As mentioned I'd like to introduce you to Bob. He and I know each other from \[place you and Bob know each other from\]. He's recently been \[doing thing that interests Alice\]. And I mentioned what you have been doing with \[thing that interests Bob\].
+> As mentioned, I'd like to introduce you to Bob. He and I know each other from \[place you and Bob know each other from\]. He's recently been \[doing thing that interests Alice\]. And I mentioned what you have been doing with \[thing that interests Bob\].
 
 > Bob,
 
