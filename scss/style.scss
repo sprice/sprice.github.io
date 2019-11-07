@@ -89,6 +89,15 @@ a:hover {
   display: none;
 }
 
+.highlighter-rouge {
+  background-color: #eee;
+}
+
+pre.highlight {
+  white-space: pre-wrap;
+  padding: 0.5555rem;
+}
+
 /* Contact Form */
 form.fte, form.fte input, form.fte textarea, form.fte select, form.fte .fte-ckrad{font-size:16px;color:#222;font-family:verdana,sans-serif;line-height:1.3em;border-radius:0;outline:none;box-sizing:border-box;-webkit-text-size-adjust:100%;}    
 form.fte{max-width:600px;padding:0;margin:2em auto;}

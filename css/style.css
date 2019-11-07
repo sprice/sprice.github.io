@@ -59,6 +59,13 @@ a:hover {
 .sr-only {
   display: none; }
 
+.highlighter-rouge {
+  background-color: #eee; }
+
+pre.highlight {
+  white-space: pre-wrap;
+  padding: 0.5555rem; }
+
 /* Contact Form */
 form.fte, form.fte input, form.fte textarea, form.fte select, form.fte .fte-ckrad {
   font-size: 16px;
