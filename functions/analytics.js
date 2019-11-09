@@ -38,6 +38,43 @@ exports.handler = function(event, context, callback) {
   const page = event.headers.referer.split(baseDomain)[1]
 
   log('Pageview tracked', uuid)
+
+  const qs = event.queryStringParameters
+  const tid = process.env.GOOGLE_ANALYTICS_ID
+  const userAgent = event.headers['user-agent']
+  const uip = event.headers['client-ip']
+  const dr = event.headers['referer']
+  const cn = qs.utm_campaign
+  // utm_source
+  // utm_medium
+  // utm_term
+  // utm_content
+
+  // https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
+  params = {
+    'v': 1,                                     // Protocol version
+    tid,                                        // Tracking ID
+    'aip': 1,                                   // Anonymize IP
+    'ds': 'web',                                // Data source
+    'cid': uuid,                                // Client ID
+    uip,                                        // IP
+    'ua': userAgent,                            // User Agent
+    dr,                                         // Document Referrer
+    't': 'pageview',                            // Hit Type
+    'dp': page,                                 // Document path
+    'dh': 'shawnprice.com',                     // Document host name
+    cn,                                         // Campaign name
+    // 'cs': cs,                                   // Campaign source
+    // 'cm': cm,                                   // Campaign medium
+    // 'ck': ck,                                   // Campaign keyword
+    // 'cc': cc,                                   // Campaign content
+    // 'ci': '',                                   // Campaign ID
+    // 'gclid': '',                                // Google Ads ID
+    // 'dclid': '',                                // Google Display Ads ID
+}
+
+console.log({params})
+
   visitor.pageview(page).send()
 
   return callback(null, returnBody);
