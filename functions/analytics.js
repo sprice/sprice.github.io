@@ -11,7 +11,6 @@ const log = (msg, value) => {
 }
 
 exports.handler = function(event, context, callback) {
-
   if (!event.headers.cookie) {
     log('Exiting: No cookies received')
     return callback(null, returnBody)
