@@ -33,8 +33,6 @@ exports.handler = function(event, context, callback) {
   var visitor = ua(process.env.GOOGLE_ANALYTICS_ID, uuid)
   const page = event.headers.referer.split(baseDomain)[1]
 
-  log('Pageview tracked', uuid)
-
   const qs = queryString.parseUrl(page)
   const tid = process.env.GOOGLE_ANALYTICS_ID
   const userAgent = event.headers['user-agent']
@@ -71,13 +69,12 @@ exports.handler = function(event, context, callback) {
     // 'dclid': '',                             // Google Display Ads ID
 }
 
-  console.log({params})
-
-
   if (process.env.NETLIFY_DEV) {
+    console.log({params})
     log('Exiting: will not run on dev environment')
     return callback(null, returnBody)
   } else {
+    log('Pageview tracked', uuid)
     visitor.pageview(page).send()
     return callback(null, returnBody);
   }
