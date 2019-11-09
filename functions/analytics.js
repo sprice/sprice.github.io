@@ -39,6 +39,8 @@ exports.handler = function(event, context, callback) {
 
   log('Pageview tracked', uuid)
 
+  console.log('EVENT', event)
+
   const qs = event.queryStringParameters
   const tid = process.env.GOOGLE_ANALYTICS_ID
   const userAgent = event.headers['user-agent']
