@@ -1,5 +1,6 @@
 const cookie = require('cookie')
 const ua = require('universal-analytics')
+const queryString = require('query-string')
 
 const now = new Date().toISOString()
 const returnBody = { statusCode: 200, body: "" }
@@ -10,11 +11,6 @@ const log = (msg, value) => {
 }
 
 exports.handler = function(event, context, callback) {
-
-  if (process.env.NETLIFY_DEV) {
-    log('Exiting: will not run on dev environment')
-    return callback(null, returnBody)
-  }
 
   if (!event.headers.cookie) {
     log('Exiting: No cookies received')
@@ -39,18 +35,17 @@ exports.handler = function(event, context, callback) {
 
   log('Pageview tracked', uuid)
 
-  console.log('EVENT', event)
-
-  const qs = event.queryStringParameters
+  const qs = queryString.parseUrl(page)
   const tid = process.env.GOOGLE_ANALYTICS_ID
   const userAgent = event.headers['user-agent']
   const uip = event.headers['client-ip']
   const dr = event.headers['referer']
-  const cn = qs.utm_campaign
-  // utm_source
-  // utm_medium
-  // utm_term
-  // utm_content
+  const geoid = event.headers['x-country']
+  const cn = qs.query.utm_campaign
+  const cs = qs.query.utm_source
+  const cm = qs.query.utm_medium
+  const ck = qs.query.utm_term
+  const cc = qs.query.utm_content
 
   // https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
   params = {
@@ -60,24 +55,30 @@ exports.handler = function(event, context, callback) {
     'ds': 'web',                                // Data source
     'cid': uuid,                                // Client ID
     uip,                                        // IP
+    geoid,                                      // Geo ID
     'ua': userAgent,                            // User Agent
     dr,                                         // Document Referrer
     't': 'pageview',                            // Hit Type
     'dp': page,                                 // Document path
     'dh': 'shawnprice.com',                     // Document host name
     cn,                                         // Campaign name
-    // 'cs': cs,                                   // Campaign source
-    // 'cm': cm,                                   // Campaign medium
-    // 'ck': ck,                                   // Campaign keyword
-    // 'cc': cc,                                   // Campaign content
-    // 'ci': '',                                   // Campaign ID
-    // 'gclid': '',                                // Google Ads ID
-    // 'dclid': '',                                // Google Display Ads ID
+    cs,                                         // Campaign source
+    cm,                                         // Campaign medium
+    ck,                                         // Campaign keyword
+    cc,                                         // Campaign content
+    // 'ci': '',                                // Campaign ID
+    // 'gclid': '',                             // Google Ads ID
+    // 'dclid': '',                             // Google Display Ads ID
 }
 
-console.log({params})
+  console.log({params})
 
-  visitor.pageview(page).send()
 
-  return callback(null, returnBody);
+  if (process.env.NETLIFY_DEV) {
+    log('Exiting: will not run on dev environment')
+    return callback(null, returnBody)
+  } else {
+    visitor.pageview(page).send()
+    return callback(null, returnBody);
+  }
 }

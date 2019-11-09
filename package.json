@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "cookie": "^0.4.0",
+    "query-string": "^6.8.3",
     "universal-analytics": "^0.4.20"
   }
 }
