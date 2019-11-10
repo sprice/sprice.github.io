@@ -74,7 +74,7 @@ exports.handler = function(event, context, callback) {
     return callback(null, returnBody)
   } else {
     log('Pageview tracked', uuid)
-    visitor.pageview(page).send()
+    visitor.pageview(params).send()
     return callback(null, returnBody);
   }
 }
