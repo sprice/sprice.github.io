@@ -73,7 +73,6 @@ exports.handler = function(event, context, callback) {
     log('Exiting: will not run on dev environment')
     return callback(null, returnBody)
   } else {
-    console.log('params', params)
     visitor.pageview(params, err => {
       if (err) {
         console.log('Error Tracking Pageview', err)
