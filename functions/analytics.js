@@ -29,7 +29,7 @@ exports.handler = function(event, context, callback) {
     return callback(null, returnBody)
   }
 
-  var visitor = ua(process.env.GOOGLE_ANALYTICS_ID, uuid)
+  var visitor = ua(process.env.GOOGLE_ANALYTICS_ID)
   const page = event.headers.referer.split(baseDomain)[1]
 
   const qs = queryString.parseUrl(page)
@@ -73,8 +73,13 @@ exports.handler = function(event, context, callback) {
     log('Exiting: will not run on dev environment')
     return callback(null, returnBody)
   } else {
-    log('Pageview tracked', uuid)
-    visitor.pageview(params).send()
+    console.log('params', params)
+    visitor.pageview(params, err => {
+      if (err) {
+        console.log('Error Tracking Pageview', err)
+      }
+      log('Pageview tracked', uuid)
+    })
     return callback(null, returnBody);
   }
 }
