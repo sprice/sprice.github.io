@@ -15,6 +15,7 @@
   </author>
   <rights type="text">Content licensed by {{ site.author.name }} under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0).</rights>
   {% for post in site.posts limit:25 %}
+  {% if post.layout == "post" %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>
     <link rel="alternate" type="text/html" href="{{ site.url }}{{ post.url }}?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign={{ post.title | replace: ',','' | replace: ' ', '' | xml_escape }}" />
@@ -23,6 +24,7 @@
     <id>{{ site.url }}{{ post.id }}</id>
     <content type="html"><![CDATA[ {{ post.content | markdownify }} ]]></content>
   </entry>
+  {% endif %}
   {% endfor %}
 
 </feed>
