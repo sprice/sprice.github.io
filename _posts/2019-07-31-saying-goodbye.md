@@ -2,7 +2,7 @@
 layout: post
 title:  "Saying Goodbye"
 date: '2019-07-31 22:45:00 -0700'
-categories: [management]
+categories: [blog]
 tags: ['engineering managment', 'management']
 description: A manager playbook for when team members leave the team.
 crosspost_to_medium: true

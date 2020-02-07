@@ -56,13 +56,21 @@
   <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon' />
 
   <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="/dist/styles.min.css" />
 </head>
 
 <body>
-  <div class="top-bar"></div>
+  <header>
+    <section>
+      <h1><a href="/">Shawn Price</a></h1>
+    </section>
+    <section class="profile-photo">
+      <img src="/images/shawn@3.png" alt="Shawn Price" />
+    </sectio>
+  </header>
+  <main>
 
-  <div class="container">
     {{ content }}
 
     <p class="social-icons">
@@ -72,10 +80,12 @@
         <a href="tel:+18552774296" aria-label="Phone"><i class="fa fa-phone" aria-hidden="true" title="Phone"></i><span class="sr-only">Phone</span></a>
         <a href="{{ site.url }}/atom.xml" aria-label="Atom Feed"><i class="fa fa-rss" aria-hidden="true" title="Atom Feed"></i><span class="sr-only">Atom Feed</span></a>
     </p>
-  </div>
+  </main>
+
   {% if jekyll.environment == "production" %}
     <script src="/js/scripts.js"></script>
   {% endif %}
+
 </body>
 
 </html>

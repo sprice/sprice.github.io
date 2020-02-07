@@ -2,7 +2,7 @@
 layout: post
 title:  Good Morning
 date: '2019-06-22 06:00:00 -0700'
-categories: [misc]
+categories: [blag]
 tags: [systems]
 description: Goals and systems each have their place. Be mindful of choosing the right tool for the job.
 crosspost_to_medium: true

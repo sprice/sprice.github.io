@@ -40,7 +40,39 @@ task :pingpubsubhubbub do
   end
 end # task: pubsubhubbub
 
+# Ping pubsubhubbub blag
+desc 'Notify pubsubhubbub server about blag.'
+task :pingpubsubhubbubblag do
+  begin
+    require 'cgi'
+    require 'net/http'
+    puts '* Pinging pubsubhubbub server'
+    data = 'hub.mode=publish&hub.url=' + CGI::escape("https://shawnprice.com/blag.xml")
+    http = Net::HTTP.new('shawnprice.superfeedr.com', 80)
+    resp, data = http.post('https://shawnprice.superfeedr.com/publish',
+                           data,
+                           {'Content-Type' => 'application/x-www-form-urlencoded'})
+    puts "Ping error: #{resp}, #{data}" unless resp.code == "204"
+  end
+end # task: pubsubhubbub blag
+
+# Ping pubsubhubbub blag
+desc 'Notify pubsubhubbub server about blog.'
+task :pingpubsubhubbubblog do
+  begin
+    require 'cgi'
+    require 'net/http'
+    puts '* Pinging pubsubhubbub server'
+    data = 'hub.mode=publish&hub.url=' + CGI::escape("https://shawnprice.com/blog.xml")
+    http = Net::HTTP.new('shawnprice.superfeedr.com', 80)
+    resp, data = http.post('https://shawnprice.superfeedr.com/publish',
+                           data,
+                           {'Content-Type' => 'application/x-www-form-urlencoded'})
+    puts "Ping error: #{resp}, #{data}" unless resp.code == "204"
+  end
+end # task: pubsubhubbub blog
+
 # rake notify
 desc 'Notify various services about new content'
-task :notify => [:sitemapgoogle, :sitemapbing, :pingpubsubhubbub] do
+task :notify => [:sitemapgoogle, :sitemapbing, :pingpubsubhubbub :pingpubsubhubbubblag :pingpubsubhubbubblog] do
 end

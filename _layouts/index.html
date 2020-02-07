@@ -1,28 +1,28 @@
 ---
 layout: default
 ---
-  <header>
-    <div></div>
-    <div class="profile-photo">
-      <img src="/images/shawn@3.png" alt="Shawn Price" />
-    </div>
-  </header>
-
-  <div class="site">
-
-{{ content }}
-
-  </div>
+  <section class="hero">
+  {{ content }}
+  </section>
 
   {% if site.posts %}
-  <div class="posts">
-    <h3>Posts</h3>
-    <ul>
-      {% for post in site.posts %}
-        {% if post.layout == "post" %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a> - <span class="post-date">{{ post.date | date: "%B %-d,  %Y" }}</span></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
+  <section class="posts">
+    <section class="blag">
+      <h3>Personal Blag</h3>
+      <ul>
+        {% for post in site.categories.blag %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a> - <span class="post-date">{{ post.date | date: "%B %-d,  %Y" }}</span></li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section class="blog">
+      <h3>Professional Blog</h3>
+      <ul>
+        {% for post in site.categories.blog %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a> - <span class="post-date">{{ post.date | date: "%B %-d,  %Y" }}</span></li>
+        {% endfor %}
+      </ul>
+    </section>
+    
+  </section>
   {% endif %}

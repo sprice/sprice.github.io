@@ -1,22 +1,19 @@
 /**
  * Common SCSS
  */
-header .shawnprice {
-  font-size: 2em; }
+section.hero h2 {
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.7777rem;
+  line-height: 2.3333rem;
+  font-weight: 400; }
 
-h2.hi {
+section.hero h3 {
   font-family: 'Merriweather', Georgia, serif;
   font-weight: 700;
   font-size: 2em;
   line-height: 1.143;
   margin-bottom: .5em;
   color: #0D47A1; }
-
-h1.about {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.7777rem;
-  line-height: 2.3333rem;
-  font-weight: 400; }
 
 h1 {
   font-size: 2.3333rem;

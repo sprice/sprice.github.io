@@ -2,6 +2,7 @@
 layout: post
 title:  "More Canadian Software Engineers Should Work Remotely"
 date: '2019-08-07 12:50:00 -0400'
+categories: [blog]
 tags: ['remote work', 'distributed teams', 'money', 'canada', 'software engineering']
 description: The benefits of distributed work and the US Dollar are too good to pass up.
 crosspost_to_medium: true

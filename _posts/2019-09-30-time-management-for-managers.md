@@ -2,6 +2,7 @@
 layout: post
 title:  "Time Management For Managers"
 date: '2019-09-30 21:00:00 -0700'
+categories: [blog]
 tags: ['management']
 description: Take control of your calendar. Take control of your time.
 crosspost_to_medium: true

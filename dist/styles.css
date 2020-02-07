@@ -1,4 +1,4 @@
-font/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -8,7 +8,7 @@ font/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -22,6 +22,14 @@ html {
 
 body {
   margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
 }
 
 /**
@@ -339,6 +347,7 @@ template {
 [hidden] {
   display: none;
 }
+
 .fa,
 .fab  {
   -moz-osx-font-smoothing: grayscale;
@@ -410,43 +419,52 @@ html, body {
   width: 100%;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Lora', Georgia, serif;
   font-weight: 400;
 }
 
-.container {
+main {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 20px;
 }
 
 @media screen and (min-width: 940px) {
-  .container {
+  main {
     padding: 0 2rem;
   }
+
+  header {
+    padding: 0 2rem;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 125px;
+  background-color: #C5CAE9;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header h1 a {
+  text-decoration: none;
 }
 
 p {
   margin-bottom: 1em;
 }
 
-header {
-  margin-top: 1vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 125px;
-}
-
-.hello {
+section.hero {
   max-width: 768px;
   margin: auto;
   font-size: 1.7777rem;
   line-height: 2.6666rem;
-}
-
-.hello .about {
-  text-align: left;
 }
 
 .contact p {
@@ -562,22 +580,19 @@ article img {
 /**
  * Common SCSS
  */
-header .shawnprice {
-  font-size: 2em; }
+section.hero h2 {
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.7777rem;
+  line-height: 2.3333rem;
+  font-weight: 400; }
 
-h2.hi {
+section.hero h3 {
   font-family: 'Merriweather', Georgia, serif;
   font-weight: 700;
   font-size: 2em;
   line-height: 1.143;
   margin-bottom: .5em;
   color: #0D47A1; }
-
-h1.about {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.7777rem;
-  line-height: 2.3333rem;
-  font-weight: 400; }
 
 h1 {
   font-size: 2.3333rem;
