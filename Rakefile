@@ -74,5 +74,5 @@ end # task: pubsubhubbub blog
 
 # rake notify
 desc 'Notify various services about new content'
-task :notify => [:sitemapgoogle, :sitemapbing, :pingpubsubhubbub :pingpubsubhubbubblag :pingpubsubhubbubblog] do
+task :notify => [:sitemapgoogle, :sitemapbing, :pingpubsubhubbub, :pingpubsubhubbubblag, :pingpubsubhubbubblog] do
 end
