@@ -23,7 +23,11 @@
 </head>
 
 <body>
-    {{ content }}
+  {{ content }}
+
+  {% if jekyll.environment == "production" %}
+  <script src="/js/scripts.js"></script>
+  {% endif %}
 </body>
 
 </html>
