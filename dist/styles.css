@@ -467,6 +467,32 @@ section.hero {
   line-height: 2.6666rem;
 }
 
+section.blog, section.blag {
+  padding-top: 1rem;
+}
+
+section.newsletter {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.revue-form-group label,
+.revue-form-group input {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+section.newsletter input#member_submit {
+  background-color: #C5CAE9;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+section.newsletter input#member_submit:hover {
+  cursor: pointer;
+}
+
 .contact p {
   font-size: 1.2222rem;
 }
@@ -675,7 +701,7 @@ form.fte input[type="submit"] {
   color: #fff;
   padding: 18px 28px;
   width: auto;
-  border-radius: 100px;
+  border-radius: 0.5rem;
   cursor: pointer;
   border: none;
   margin: 0;

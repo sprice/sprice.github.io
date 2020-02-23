@@ -73,6 +73,20 @@
 
     {{ content }}
 
+    <section class="newsletter">
+      <div id="revue-embed">
+        <form action="https://www.getrevue.co/profile/shawnprice/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+        <div class="revue-form-group">
+          <label for="member_email">Subscribe to email newsletter</label><br />
+          <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+        </div>
+        <div class="revue-form-actions">
+          <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+        </div>
+        </form>
+      </div>
+    </section>
+
     <p class="social-icons">
         <a href="https://twitter.com/sprice" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
         <a href="https://ca.linkedin.com/in/shawnprice" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>

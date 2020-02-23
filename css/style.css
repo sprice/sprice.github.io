@@ -96,7 +96,7 @@ form.fte input[type="submit"] {
   color: #fff;
   padding: 18px 28px;
   width: auto;
-  border-radius: 100px;
+  border-radius: 0.5rem;
   cursor: pointer;
   border: none;
   margin: 0;

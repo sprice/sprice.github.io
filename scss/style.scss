@@ -96,7 +96,7 @@ form.fte, form.fte input, form.fte textarea, form.fte select, form.fte .fte-ckra
 form.fte{max-width:600px;padding:0;margin:2em auto;}
 form.fte input, form.fte textarea, form.fte select, form.fte .fte-ckrad label{color:#666;background:#fff;border:1px solid #ccc;width:100%;padding:15px 20px;margin:15px 0 30px;transition: all .2s;}
 form.fte input[type="text"], form.fte input[type="submit"], form.fte textarea{-webkit-appearance:none;}
-form.fte input[type="submit"]{background:#444;color:#fff;padding:18px 28px;width:auto;border-radius:100px;cursor:pointer;border:none;margin:0;white-space:normal;}
+form.fte input[type="submit"]{background:#444;color:#fff;padding:18px 28px;width:auto;border-radius:0.5rem;cursor:pointer;border:none;margin:0;white-space:normal;}
 form.fte input[type="submit"]:hover{background:#666;}
 form.fte input:focus, form.fte textarea:focus, form.fte select:focus{border-color:#999;}
 form.fte select{-moz-appearance: none; -webkit-appearance: none; background: #fff url("data:image/gif;base64,R0lGODlhCgAFAJEAAGZmZv///////wAAACH5BAEHAAIALAAAAAAKAAUAAAIKhI+CKboNGWxmFgA7") no-repeat right 20px center;padding-right:20px;cursor:pointer;}   

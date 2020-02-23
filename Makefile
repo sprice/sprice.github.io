@@ -1,3 +1,6 @@
+css:
+	npm run build:css
+
 build:
 	npm run build:css
 	bundle exec jekyll clean
