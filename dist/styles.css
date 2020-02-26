@@ -477,7 +477,7 @@ footer {
   align-items: center;
   margin-top: 2rem;
   padding: 1rem 0;
-  background-color: #311B92;
+  background-color: #212121;
 }
 
 section.newsletter {
@@ -523,16 +523,22 @@ section.blog, section.blag {
   margin-bottom: 0.5rem;
 }
 
-section.newsletter input#member_submit {
-  background-color: #f5f5f5;
+section.newsletter input#member_email {
+  padding: 1rem;
+  background-color: #ffffff;
   border: 0;
-  padding: 0.222rem;
-  border-radius: 0.111rem;
+}
+
+section.newsletter input#member_submit {
+  background-color: #5E35B1;
+  border: 0;
+  padding: 1rem;
+  color: #ffffff
 }
 
 section.newsletter input#member_submit:hover {
   cursor: pointer;
-  background-color: #eeeeee;
+  background-color: #673AB7;
 }
 
 .contact p {
