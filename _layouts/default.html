@@ -63,38 +63,34 @@
 <body>
   <header>
     <section>
-      <h1><a href="/">Shawn Price</a></h1>
+      <h1><a href="/">SHAWN PRICE</a></h1>
     </section>
-    <section class="profile-photo">
-      <img src="/images/shawn@3.png" alt="Shawn Price" />
-    </sectio>
   </header>
   <main>
 
     {{ content }}
 
+  </main>
+  <footer>
     <section class="newsletter">
       <div id="revue-embed">
         <form action="https://www.getrevue.co/profile/shawnprice/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
         <div class="revue-form-group">
-          <label for="member_email">Subscribe to email newsletter</label><br />
+          <label for="member_email">Please subscribe to the email newsletter</label><br />
           <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
-        </div>
-        <div class="revue-form-actions">
           <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
         </div>
         </form>
       </div>
     </section>
-
-    <p class="social-icons">
-        <a href="https://twitter.com/sprice" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
-        <a href="https://ca.linkedin.com/in/shawnprice" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>
-        <a href="https://github.com/sprice" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true" title="GitHub"></i><span class="sr-only">GitHub</span></a>
-        <a href="tel:+18552774296" aria-label="Phone"><i class="fa fa-phone" aria-hidden="true" title="Phone"></i><span class="sr-only">Phone</span></a>
-        <a href="{{ site.url }}/atom.xml" aria-label="Atom Feed"><i class="fa fa-rss" aria-hidden="true" title="Atom Feed"></i><span class="sr-only">Atom Feed</span></a>
-    </p>
-  </main>
+    <section class="social-icons">
+      <a href="https://twitter.com/sprice" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i><span class="sr-only">Twitter</span></a>
+      <a href="https://instagram.com/spriceless" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true" title="Instagram"></i><span class="sr-only">Instagram</span></a>
+      <a href="https://ca.linkedin.com/in/shawnprice" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true" title="LinkedIn"></i><span class="sr-only">LinkedIn</span></a>
+      <a href="/contact" aria-label="Contact"><i class="fa fa-envelope" aria-hidden="true" title="Contact"></i><span class="sr-only">Contact</span></a>
+      <a href="{{ site.url }}/atom.xml" aria-label="Atom Feed"><i class="fa fa-rss" aria-hidden="true" title="Atom Feed"></i><span class="sr-only">Atom Feed</span></a>
+    </section>
+  </footer>
 
   {% if jekyll.environment == "production" %}
     <script src="/js/scripts.js"></script>

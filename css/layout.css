@@ -8,9 +8,17 @@ html, body {
   line-height: 24px;
   font-family: 'Lora', Georgia, serif;
   font-weight: 400;
+  color: #212121;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
+  flex: 1;
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 20px;
@@ -29,18 +37,49 @@ main {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 125px;
-  background-color: #C5CAE9;
+  background-color: #ffffff;
   padding: 0 20px;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1.333rem;
+  font-weight: 500;
 }
 
 header h1 a {
   text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #311B92;
+}
+
+section.newsletter {
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 940px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  section.newsletter {
+    padding-left: 2rem;
+    margin-bottom: 0;
+  }
+
+  section.social-icons {
+    padding-right: 2rem;
+  }
 }
 
 p {
@@ -52,15 +91,11 @@ section.hero {
   margin: auto;
   font-size: 1.7777rem;
   line-height: 2.6666rem;
+  text-align: center;
 }
 
 section.blog, section.blag {
   padding-top: 1rem;
-}
-
-section.newsletter {
-  text-align: center;
-  margin: 0 auto;
 }
 
 .revue-form-group label,
@@ -70,14 +105,15 @@ section.newsletter {
 }
 
 section.newsletter input#member_submit {
-  background-color: #C5CAE9;
+  background-color: #f5f5f5;
   border: 0;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0.222rem;
+  border-radius: 0.111rem;
 }
 
 section.newsletter input#member_submit:hover {
   cursor: pointer;
+  background-color: #eeeeee;
 }
 
 .contact p {
@@ -104,11 +140,15 @@ section.newsletter input#member_submit:hover {
   text-align: center;
 }
 
+.post-date {
+  font-size: 0.888rem;
+}
+
 article {
-  max-width: 768px;
+  max-width: 34.666rem;
   margin: auto;
-  font-size: 1.1666rem;
-  line-height: 1.8333rem;
+  font-size: 1.111;
+  line-height: 1.666;
 }
 
 #post blockquote {
@@ -129,14 +169,4 @@ article img {
   text-align: center;
   font-size: 0.7777rem;
   margin-top: 0;
-}
-
-.profile-photo img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background: rgb(244,143,177);
-  background: linear-gradient(0deg, rgba(244,143,177,1) 20%, rgba(206,147,216,1) 80%);
 }

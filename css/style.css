@@ -3,17 +3,14 @@
  */
 section.hero h2 {
   font-family: "Lora", Georgia, serif;
-  font-size: 1.7777rem;
-  line-height: 2.3333rem;
+  font-size: 1.222rem;
+  line-height: 1.444rem;
   font-weight: 400; }
 
-section.hero h3 {
-  font-family: 'Merriweather', Georgia, serif;
-  font-weight: 700;
-  font-size: 2em;
-  line-height: 1.143;
-  margin-bottom: .5em;
-  color: #0D47A1; }
+@media screen and (min-width: 940px) {
+  section.hero h2 {
+    font-size: 1.777rem;
+    line-height: 2.3333rem; } }
 
 h1 {
   font-size: 2.3333rem;
@@ -45,7 +42,8 @@ a:hover {
   justify-content: center; }
 
 .social-icons a {
-  margin-right: 20px; }
+  margin-right: 20px;
+  color: #ffffff; }
 
 .social-icons a:last-of-type {
   margin-right: 0; }

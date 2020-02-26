@@ -17,6 +17,12 @@ content: "\f08c"; }
 .fa-linkedin-in:before {
   content: "\f0e1"; }
 
+.fa-envelope:before {
+  content: "\f0e0"; }
+
+.fa-instagram:before {
+  content: "\f16d"; }
+
 .fa-github:before {
   content: "\f09b"; }
 
