@@ -421,10 +421,11 @@ content: "\f08c"; }
  * Layout Common
  */
 
+/* One rhythm unit is 20px * 1.5 = 30px */
 html, body {
   width: 100%;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 1.5rem;
   font-family: 'Lora', Georgia, serif;
   font-weight: 400;
   color: #212121;
@@ -434,6 +435,11 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+body {
+  /* background-image: url(/images/rhythm.png); */
+  z-index: 100;
 }
 
 main {
@@ -453,18 +459,26 @@ main {
   }
 }
 
+main h2 {
+  font-size: 1.777rem;
+  line-height: 2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 125px;
-  background-color: #ffffff;
   padding: 0 20px;
+  margin: 1.5rem 0;
 }
 
 header h1 {
   font-size: 1.333rem;
+  line-height: 1.5rem;
   font-weight: 500;
+  margin: 0;
 }
 
 header h1 a {
@@ -472,11 +486,12 @@ header h1 a {
 }
 
 footer {
+  /* background-image: url(/images/rhythm.png); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
-  padding: 1rem 0;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
   background-color: #212121;
 }
 
@@ -502,7 +517,7 @@ section.newsletter {
 }
 
 p {
-  margin-bottom: 1em;
+  margin-top: 1.5rem;
 }
 
 section.hero {
@@ -520,19 +535,21 @@ section.blog, section.blag {
 .revue-form-group label,
 .revue-form-group input {
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 section.newsletter input#member_email {
-  padding: 1rem;
-  background-color: #ffffff;
+  padding: 0.75rem;
+  line-height: 1.5rem;
   border: 0;
+  background-color: #ffffff;
 }
 
 section.newsletter input#member_submit {
-  background-color: #5E35B1;
+  padding: 0.75rem;
+  line-height: 1.5rem;
   border: 0;
-  padding: 1rem;
+  background-color: #5E35B1;
   color: #ffffff
 }
 
@@ -571,9 +588,9 @@ section.newsletter input#member_submit:hover {
 
 article {
   max-width: 34.666rem;
-  margin: auto;
-  font-size: 1.111;
-  line-height: 1.666;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 #post blockquote {
@@ -586,7 +603,8 @@ article img {
 
 .license {
   width: 80px;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 1.5rem;
   text-align: center;
 }
 
