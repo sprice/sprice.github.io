@@ -537,6 +537,9 @@ section.blog, section.blag {
   display: inline-block;
   margin-bottom: 0;
 }
+.revue-form-group label {
+  margin-bottom: 0.75rem;
+}
 
 section.newsletter input#member_email {
   padding: 0.75rem;
@@ -587,7 +590,7 @@ section.newsletter input#member_submit:hover {
 }
 
 article {
-  max-width: 34.666rem;
+  max-width: 31rem;
   margin: 0 auto;
   font-size: 1rem;
   line-height: 1.5rem;
