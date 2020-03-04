@@ -20,7 +20,6 @@ body {
 
 body {
   /* background-image: url(/images/rhythm.png); */
-  z-index: 100;
 }
 
 main {
@@ -56,7 +55,7 @@ header {
 }
 
 header h1 {
-  font-size: 1.333rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   font-weight: 500;
   margin: 0;
@@ -72,7 +71,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 1.5rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem 20px;
   background-color: #212121;
 }
 
@@ -102,15 +101,17 @@ p {
 }
 
 section.hero {
-  max-width: 768px;
-  margin: auto;
-  font-size: 1.7777rem;
-  line-height: 2.6666rem;
+  max-width: 40rem;
+  margin: 0 auto;
   text-align: center;
 }
 
 section.blog, section.blag {
-  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+section.blog h3 {
+  margin-top: 2.4rem;
 }
 
 .revue-form-group label,
@@ -159,15 +160,24 @@ section.newsletter input#member_submit:hover {
 
 .posts li {
   list-style-type: none;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .posts h3 {
   text-align: center;
 }
 
+.post-title {
+  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
 .post-date {
-  font-size: 0.888rem;
+  line-height: 0.75rem;
+  font-size: 0.75rem;
 }
 
 article {
