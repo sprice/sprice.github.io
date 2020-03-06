@@ -636,6 +636,10 @@ article {
   line-height: 1.5rem;
 }
 
+article h2 {
+  font-family: 'Empirica', Georgia, serif;
+}
+
 #post blockquote {
   font-style: italic;
 }
