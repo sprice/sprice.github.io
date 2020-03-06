@@ -5,9 +5,9 @@ $selectionColor: #1E88E5;
 $linkColor: #263238;
 $underlineHeightHover: 3px;
 $headingColor: #0D47A1;
-$sansSerif: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$serif: 'Merriweather', Georgia, serif;
-$bodyType: 'Lora', Georgia, serif;
+$sansSerif: "'Mallory-MP'", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$serif: 'Empirica', Georgia, serif;
+$bodyType: 'Empirica', Georgia, serif;
 
 /**
  * Common SCSS
@@ -34,13 +34,17 @@ section.hero h2 {
 h1 {
   font-size: 2.3333rem;
   line-height: 3rem;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: $serif;
 }
 
 .amp {
   font-size: 1.1em;
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic;
+}
+
+.hero .amp {
+  font-weight: 500;
 }
 
 .number {

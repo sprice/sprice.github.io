@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Mallory-MP';
+  src: url('/fonts/MalloryMP/MalloryMP-Book.woff') format('woff');
+  src: url('/fonts/MalloryMP/MalloryMP-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Mallory-MP';
+  src: url('/fonts/MalloryMP/MalloryMP-BookItalic.woff') format('woff');
+  src: url('/fonts/MalloryMP/MalloryMP-BookItalic.woff2') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Empirica';
+  src: url('/fonts/Empirica/EmpiricaHeadline-Medium.woff') format('woff');
+  src: url('/fonts/Empirica/EmpiricaHeadline-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}

@@ -2,7 +2,7 @@
  * Common SCSS
  */
 section.hero h2 {
-  font-family: "Lora", Georgia, serif;
+  font-family: "Empirica", Georgia, serif;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-top: 1rem;
@@ -19,12 +19,15 @@ section.hero h2 {
 h1 {
   font-size: 2.3333rem;
   line-height: 3rem;
-  font-family: 'Merriweather', Georgia, serif; }
+  font-family: "Empirica", Georgia, serif; }
 
 .amp {
   font-size: 1.1em;
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic; }
+
+.hero .amp {
+  font-weight: 500; }
 
 .number {
   font-size: 0.9em;

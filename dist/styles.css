@@ -405,6 +405,32 @@ content: "\f08c"; }
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 @font-face {
+  font-family: 'Mallory-MP';
+  src: url('/fonts/MalloryMP/MalloryMP-Book.woff') format('woff');
+  src: url('/fonts/MalloryMP/MalloryMP-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Mallory-MP';
+  src: url('/fonts/MalloryMP/MalloryMP-BookItalic.woff') format('woff');
+  src: url('/fonts/MalloryMP/MalloryMP-BookItalic.woff2') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Empirica';
+  src: url('/fonts/Empirica/EmpiricaHeadline-Medium.woff') format('woff');
+  src: url('/fonts/Empirica/EmpiricaHeadline-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
     font-family: 'SortsMillGoudy';
     src: url('/fonts/SortsMillGoudy/GoudyStM-webfont.eot');
     src: url('/fonts/SortsMillGoudy/GoudyStM-webfont.eot?#iefix') format('embedded-opentype'),
@@ -426,7 +452,7 @@ html, body {
   width: 100%;
   font-size: 20px;
   line-height: 1.5rem;
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'Mallory-MP', Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: #212121;
 }
@@ -474,7 +500,7 @@ header {
 }
 
 header h1 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 500;
   margin: 0;
@@ -529,6 +555,10 @@ section.blog, section.blag {
   margin-top: 1rem;
 }
 
+section.blog h3, section.blag h3 {
+  font-family: 'Empirica', Georgia, serif;
+}
+
 section.blog h3 {
   margin-top: 2.4rem;
 }
@@ -568,7 +598,7 @@ section.newsletter input#member_submit:hover {
 
 .contact h3 {
   font-size: 1.5555rem;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Empirica', Georgia, serif;
 }
 
 .posts ul {
@@ -600,7 +630,7 @@ section.newsletter input#member_submit:hover {
 }
 
 article {
-  max-width: 31rem;
+  max-width: 35rem;
   margin: 0 auto;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -680,7 +710,7 @@ article img {
  * Common SCSS
  */
 section.hero h2 {
-  font-family: "Lora", Georgia, serif;
+  font-family: "Empirica", Georgia, serif;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-top: 1rem;
@@ -697,12 +727,15 @@ section.hero h2 {
 h1 {
   font-size: 2.3333rem;
   line-height: 3rem;
-  font-family: 'Merriweather', Georgia, serif; }
+  font-family: "Empirica", Georgia, serif; }
 
 .amp {
   font-size: 1.1em;
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
   font-style: italic; }
+
+.hero .amp {
+  font-weight: 500; }
 
 .number {
   font-size: 0.9em;
