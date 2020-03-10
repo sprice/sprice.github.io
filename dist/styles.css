@@ -462,10 +462,11 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
+/*
 body {
-  /* background-image: url(/images/rhythm.png); */
+  background-image: url(/images/rhythm.png);
 }
+*/
 
 main {
   flex: 1;
@@ -500,7 +501,7 @@ header {
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.5rem;
   font-weight: 500;
   margin: 0;
@@ -627,6 +628,7 @@ section.newsletter input#member_submit:hover {
 .post-date {
   line-height: 0.75rem;
   font-size: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 article {
