@@ -1,3 +1,5 @@
 User-agent: *
 Sitemap: https://shawnprice.com/sitemap.xml
 Disallow: /heartbeat/
+Disallow: /fonts
+Disallow: /fonts/*

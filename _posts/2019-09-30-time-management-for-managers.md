@@ -52,4 +52,4 @@ The solution I found was booking my making time as an “Out of office” event.
 
 Note that in Google Calendar, you cannot book repeating “Out of office” events. The habit I created was to create my “Out of office” events first thing in the morning on the first day of the week.
 
-A manager is always too busy, but it’s important to keep your calendar under some level of control. If you know of any useful calendar hacks, please [let me know](/contact).
+A manager is always too busy, but it’s important to keep your calendar under some level of control. If you know of any useful calendar hacks, please [let me know](https://twitter.com/sprice).
