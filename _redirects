@@ -1,6 +1,6 @@
 # Netlify redirects from what the browser requests to what we serve
 
-
+/calm-consistency/index.html                                                  /calm-consistency/ 301!
 /lets-talk/index.html                                                         /lets-talk/ 301!
 /2019-year-in-review/index.html                                               /2019-year-in-review/ 301!
 /double-opt-in-introduction/index.html                                        /double-opt-in-introduction/ 301!

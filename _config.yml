@@ -27,7 +27,6 @@ include: [
   _redirects
 ]
 plugins: [
-  jekyll-crosspost-to-medium,
   jekyll-paginate,
   jekyll-seo-tag,
   jekyll-sitemap
@@ -36,10 +35,3 @@ timezone: America/Vancouver
 markdown: kramdown
 kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-jekyll-crosspost_to_medium:
-  enabled: true
-  cache: .jekyll-crosspost_to_medium
-  status: draft
-  license: cc-40-by-nc-sa
-  text: '<p><i>Originally published at <a href="{{ url }}?utm_source=medium.com&amp;utm_medium=referral">shawnprice.com</a></i></p>'
-  backdate: true
