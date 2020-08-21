@@ -5,8 +5,11 @@ layout: page
   <h2>{{ page.title }}</h2>
   <span>{{ page.date | date: "%B %-d,  %Y" }}</span>
   {{ content }}
+  {% if page.twitter_comments_url %}
+  <p class="twitter-comments"><a href="{{ page.twitter_comments_url}}" target="_blank" rel="noopener noreferrer">Comment on Twitter</a></p>
+  {% endif %}
 </article>
 
 <p class="license">
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" aria-label="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"/></a>
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" aria-label="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"/></a>
 </p>
