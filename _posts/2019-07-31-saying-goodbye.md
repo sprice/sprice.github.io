@@ -6,6 +6,7 @@ categories: [blog]
 tags: ['engineering managment', 'management']
 description: A manager playbook for when team members leave the team.
 crosspost_to_medium: true
+twitter_comments_url: https://twitter.com/sprice/status/1156950963233550338
 ---
 
 "Can we talk for a minute." Here it is. I have usually seen this coming for weeks, if not months. I've done what I can to clear up any questions or issues. I've often coached to get to the root cause of the issue or dissatisfaction. Every now and then it's a lever I have some level of control over. Often it's not.

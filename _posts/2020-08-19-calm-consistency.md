@@ -11,7 +11,7 @@ hero_image_small_url: /images/calm-year.small.jpg
 hero_image_small_width: 660
 hero_image_small_height: 440
 hero_image_alt: Calendar of days with meditation practice.
-twitter_comments_url:
+twitter_comments_url: https://twitter.com/sprice/status/1296657937000099840
 ---
 ![{{ page.hero_image_alt}}]({{ page.hero_image_url }})
 
