@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Calm Consitency
+title:  Calm Consistency
 date: '2020-08-19 14:40:00 -0700'
 categories: [blag]
 tags: [habits, consistency, mindfullness]
