@@ -80,6 +80,25 @@ a:hover {
   margin-right: 0;
 }
 
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 940px) {
+  .footer-links {
+    margin-bottom: 0;
+  }
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
 
 .home-link a {
   text-decoration: none;
