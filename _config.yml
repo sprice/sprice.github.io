@@ -35,3 +35,8 @@ timezone: America/Vancouver
 markdown: kramdown
 kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
+defaults:
+  - scope:
+      path: 'fonts/*'
+    values:
+      sitemap: false
